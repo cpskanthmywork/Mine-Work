@@ -1,5 +1,6 @@
 
 Python Variable
+Function , String
 
 
 # python print() statement
@@ -41,3 +42,41 @@ print(name + " works at " + school + ".")
 
 #python string.format()
 print(f"{name} goes to school in {type_of_car} to the school {school}");
+
+
+Function & String
+
+"""
+def addition():
+    a = 50
+    b = 50
+    # print(a + b)
+    print(f"Total is: {a + b}");
+
+
+addition()
+
+def sub():
+    a = int(input("Enter the First Number: "))
+    b = int(input("Enter your Second Number: "))
+    c = a + b
+    c1 = a - b
+    c2 = a * b
+    c3 = a > b
+    c4 = a < b
+    print(f"Addition of Two Number is {c}");
+    print(f"Subtraction of Two Number is {c1}");
+    print(f"Multiplication of Two Number is {c2}");
+    print(f"Is two number is greater:? {c3}");
+    print(f"Is two number is Lesser:? {c4}");
+
+
+sub()
+"""
+def String():
+    a = "My Name is"
+    b = "Srikanth"
+    print (a+ " "+ b)
+
+
+String()
