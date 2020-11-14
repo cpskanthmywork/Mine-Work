@@ -1,0 +1,23 @@
+'''
+def user_info(name,age, city):
+    print("{} is {} year old, from {}".format(name,age,city));
+
+
+user_info("Srikanth",27,"Bangalore")
+user_info("Nayan",20,"Bangalore")
+user_info("Hari",20,"Bangalore")
+user_info("Pawani",20,"Bangalore")
+'''
+'''Normal Args'''
+def user_info(name,age = 0, city = 'Bangalore'):
+    print("{} is {} year old, from {}".format(name,age,city));
+
+
+user_info("Srikanth")
+
+# *args and **kwargs
+def application(fname, lname, email, company, *args, **kwargs):
+    print("{} {} works at {}. Her email is {}.".format(fname, lname, company, email))
+
+
+application("Srikanth", "C P", "srikanth @ google.com", "Google", 75000, hire_date = "September 2010")
