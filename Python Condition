@@ -1,0 +1,48 @@
+name = input("Wht is your Name? ")
+if name =="Srikanth":
+    print("Hello, Nice to meet you {}".format(name))
+elif name == "Nayana":
+    print("Nice to see you {}".format(name))
+elif name == "Prabhakar":
+    print("You are so sweet")
+elif name != "Hari":
+    print("You're not match with the DB {}, please check again".format(name))
+else:
+    print("You are the wrong person {}, Please Try Again".format(name))
+
+
+'''
+def add():
+    a = float(input("Enter a Number: "))
+    b = float(input("Enter another Number: "))
+    print(a + b)
+
+def sub():
+    a = float(input("Enter a Number: "))
+    b = float(input("Enter another Number: "))
+    print(a - b)
+
+def multiply():
+    a = float(input("Enter a Number: "))
+    b = float(input("Enter another Number: "))
+    print(a * b)
+
+def divide():
+    a = float(input("Enter a Number: "))
+    b = float(input("Enter another Number: "))
+    print(a / b)
+
+operation = input("Please type +, -, *, / ")
+if operation == '+':
+    add()
+elif operation == '-':
+    sub()
+elif operation == '*':
+    multiply()
+elif operation == '/':
+    divide()
+else:
+    print("Please check and select the correct Math & try again: ")
+'''
+
+
