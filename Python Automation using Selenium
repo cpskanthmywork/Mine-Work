@@ -1,0 +1,45 @@
+from selenium import webdriver
+import time
+
+driver = webdriver.Chrome(executable_path="C:/Users/Srikanth/Desktop/chromedriver_win32/chromedriver.exe")
+
+driver.get("https://munera.us")
+
+print(driver.current_url)
+print(driver.title)
+print(driver.name)
+
+driver.maximize_window()
+
+time.sleep(2)
+
+driver.find_element_by_xpath("//*[@class='jss10']").click()
+
+driver.find_element_by_xpath("//*[@name='email']").send_keys('cpskanth@gmail.com')
+
+driver.find_element_by_xpath("//*[@name='password']").send_keys('Bron@1992')
+
+driver.find_element_by_xpath("//*[@class='MuiButtonBase-root MuiButton-root MuiButton-contained btn-secondary btn btn-small MuiButton-containedPrimary']").click()
+
+time.sleep(3)
+
+driver.find_element_by_xpath("//*[@class='add-icon']").click()
+
+time.sleep(5)
+
+driver.find_element_by_xpath("//*[@class='material-icons MuiIcon-root edit-icon MuiIcon-colorPrimary']").click()
+
+driver.find_element_by_xpath("//*[@name='projectName']").send_keys('My Building')
+
+time.sleep(3)
+
+driver.find_element_by_xpath("//*[@class='MuiSvgIcon-root']").click()
+
+driver.find_element_by_xpath("//*[@class='MuiIconButton-label']").click()
+time.sleep(2)
+driver.find_element_by_xpath("//*[@id='simple-menu']/div[3]/ul/li").click()
+
+driver.refresh()
+
+
+
