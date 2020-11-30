@@ -1,0 +1,46 @@
+I am trying to run this code on Pycharm IDE, but the response is not correctly.
+**Code**
+
+import requests
+
+headers = {"Accept": "application/json",
+"User-agent": "Mozilla/5.0",
+"Accept-Charset": "utf-8",
+"Accept-Encoding": "gzip, deflate",
+"Accept-Language": "en-US"}  # or your favorite language
+URL = requests.get("https://sandbox.munera.us/login", headers=headers)
+file = open('C:\\Users\\Srikanth\\Desktop\\UserLogin.json')
+
+res = requests. Post(URL, file)
+print(res)
+
+**Error**
+
+C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\python.exe C:/Users/Srikanth/PycharmProjects/APIAutomationCheck/FetchUserData.py
+Traceback (most recent call last):
+  File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\models.py", line 382, in prepare_url
+scheme, auth, host, port, path, query, fragment = parse_url(url)
+  File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\urllib3\util\url.py", line 392, in parse_url
+    return six.raise_from(LocationParseError(source_url), None)
+  File "<string>", line 3, in raise_from
+urllib3.exceptions.LocationParseError: Failed to parse: <Response [200]>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File 
+    "C:/Users/Srikanth/PycharmProjects/APIAutomationCheck/FetchUserData.py", line 39, in <module>
+res = requests.post(URL, file)
+File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\api.py", line 119, in post
+return request('post', url, data=data, json=json, **kwargs)
+File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\api.py", line 61, in request
+return session.request(method=method, url=url, **kwargs)
+File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 528, in request
+prep = self.prepare_request(req)
+File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\sessions.py", line 456, in prepare_request
+p.prepare(
+File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\models.py", line 316, in prepare
+self.prepare_url(url, params)File "C:\Users\Srikanth\AppData\Local\Programs\Python\Python38-32\lib\site-packages\requests\models.py", line 384, in prepare_url
+raise InvalidURL(*e.args)
+requests.exceptions.InvalidURL: Failed to parse: <Response [200]>
+Process finished with exit code 1
